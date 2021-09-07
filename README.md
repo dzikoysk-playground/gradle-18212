@@ -1,5 +1,5 @@
 # Gradle-18212
-Gradle 7.x + ARM64 platform issue
+Reproduce Gradle 7.x + ARM64 platform issue with GitHub Actions and Docker images. CI tries to build simple `Hello World` application using Gradle with Kotlin DSL and launch. 
 
 #### Description
 
