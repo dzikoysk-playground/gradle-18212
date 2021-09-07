@@ -1,4 +1,4 @@
-name: Docker ARM64
+name: Docker ARM64 without Gradle
 
 on:
   push:
