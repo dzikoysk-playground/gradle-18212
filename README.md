@@ -1,5 +1,5 @@
 # Gradle-18212
-Reproduce Gradle 7.x + ARM64 platform issue with GitHub Actions and Docker images. CI tries to build simple `Hello World` application using Gradle with Kotlin DSL and launch. 
+Reproduce Gradle 7.x + ARM64 platform issue with GitHub Actions and Docker images. CI tries to build simple `Hello World` application using Gradle with Kotlin DSL and launch it. 
 
 #### Description
 
