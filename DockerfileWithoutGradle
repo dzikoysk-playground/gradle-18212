@@ -1,0 +1,10 @@
+FROM openjdk:16 AS build
+WORKDIR /clone
+RUN curl https://raw.githubusercontent.com/dzikoysk/gradle-18212/main/dist/gradle-18212-1.0.0.jar --output application.jar && \
+  java -jar application.jar
+
+# Run stage
+FROM openjdk:16-slim
+WORKDIR /app
+COPY --from=build /clone/application.jar ./application.jar
+ENTRYPOINT exec java -jar application.jar
